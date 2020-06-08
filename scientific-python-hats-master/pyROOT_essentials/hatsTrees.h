@@ -26,28 +26,28 @@ public :
    Int_t           fCurrent; //!current Tree number in a TChain
 
 // Fixed size dimensions of array or collections stored in the TTree if any.
-   static constexpr Int_t kMaxpassFilter_HBHE = 1;
-   static constexpr Int_t kMaxpassFilter_HBHELoose = 1;
-   static constexpr Int_t kMaxpassFilter_HBHETight = 1;
-   static constexpr Int_t kMaxpassFilter_HBHEIso = 1;
-   static constexpr Int_t kMaxpassFilter_CSCHalo = 1;
-   static constexpr Int_t kMaxpassFilter_CSCTightHalo2015 = 1;
-   static constexpr Int_t kMaxpassFilter_HCALlaser = 1;
-   static constexpr Int_t kMaxpassFilter_ECALDeadCell = 1;
-   static constexpr Int_t kMaxpassFilter_GoodVtx = 1;
-   static constexpr Int_t kMaxpassFilter_TrkFailure = 1;
-   static constexpr Int_t kMaxpassFilter_EEBadSc = 1;
-   static constexpr Int_t kMaxpassFilter_ECALlaser = 1;
-   static constexpr Int_t kMaxpassFilter_TrkPOG = 1;
-   static constexpr Int_t kMaxpassFilter_TrkPOG_manystrip = 1;
-   static constexpr Int_t kMaxpassFilter_TrkPOG_toomanystrip = 1;
-   static constexpr Int_t kMaxpassFilter_TrkPOG_logError = 1;
-   static constexpr Int_t kMaxpassFilter_METFilters = 1;
-   static constexpr Int_t kMaxpassFilter_CSCTightHaloTrkMuUnvetoFilter = 1;
-   static constexpr Int_t kMaxpassFilter_globalTightHalo2016 = 1;
-   static constexpr Int_t kMaxpassFilter_HcalStripHalo = 1;
-   static constexpr Int_t kMaxpassFilter_chargedHadronTrackResolution = 1;
-   static constexpr Int_t kMaxpassFilter_muonBadTrack = 1;
+   const Int_t kMaxpassFilter_HBHE = 1;
+   const Int_t kMaxpassFilter_HBHELoose = 1;
+   const Int_t kMaxpassFilter_HBHETight = 1;
+   const Int_t kMaxpassFilter_HBHEIso = 1;
+   const Int_t kMaxpassFilter_CSCHalo = 1;
+   const Int_t kMaxpassFilter_CSCTightHalo2015 = 1;
+   const Int_t kMaxpassFilter_HCALlaser = 1;
+   const Int_t kMaxpassFilter_ECALDeadCell = 1;
+   const Int_t kMaxpassFilter_GoodVtx = 1;
+   const Int_t kMaxpassFilter_TrkFailure = 1;
+   const Int_t kMaxpassFilter_EEBadSc = 1;
+   const Int_t kMaxpassFilter_ECALlaser = 1;
+   const Int_t kMaxpassFilter_TrkPOG = 1;
+   const Int_t kMaxpassFilter_TrkPOG_manystrip = 1;
+   const Int_t kMaxpassFilter_TrkPOG_toomanystrip = 1;
+   const Int_t kMaxpassFilter_TrkPOG_logError = 1;
+   const Int_t kMaxpassFilter_METFilters = 1;
+   const Int_t kMaxpassFilter_CSCTightHaloTrkMuUnvetoFilter = 1;
+   const Int_t kMaxpassFilter_globalTightHalo2016 = 1;
+   const Int_t kMaxpassFilter_HcalStripHalo = 1;
+   const Int_t kMaxpassFilter_chargedHadronTrackResolution = 1;
+   const Int_t kMaxpassFilter_muonBadTrack = 1;
 
    // Declaration of leaf types
    Int_t           ph_N;
@@ -411,7 +411,7 @@ public :
    virtual Int_t    GetEntry(Long64_t entry);
    virtual Long64_t LoadTree(Long64_t entry);
    virtual void     Init(TTree *tree);
-   virtual void     Loop();
+   virtual void     Loop(std::string outFileName);
    virtual Bool_t   Notify();
    virtual void     Show(Long64_t entry = -1);
 };
