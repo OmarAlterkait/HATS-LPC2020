@@ -1,0 +1,3 @@
+#!/home/cms.oalterka/HATS-LPC2020/coffea-hats/coffea-hats/bin/python
+from numba.pycc import main
+main()
