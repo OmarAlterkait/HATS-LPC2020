@@ -1,2 +1,4 @@
 *.root
 .ipynb_checkpoints
+coffea-hats/coffea-hats/
+coffea-hats/data/
