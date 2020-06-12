@@ -1,4 +1,16 @@
 *.root
+*.json
+
 .ipynb_checkpoints
+
+
 coffea-hats/coffea-hats/
 coffea-hats/data/
+
+scaleout-hats/cmssw-env/
+uproot-hats/LICENSE
+uproot-hats/README.md
+uproot-hats/data/
+uproot-hats/evaluated/
+uproot-hats/img/
+spark-hats/hats-spark/
